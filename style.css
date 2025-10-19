@@ -106,3 +106,28 @@ body {
   50% { opacity: 0.5; }
   100% { opacity: 1; }
 }
+/* Hoa rơi */
+.flower {
+  position: fixed;
+  top: -10px;
+  width: 25px;
+  height: 25px;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/869/869869.png');
+  background-size: cover;
+  opacity: 0.9;
+  pointer-events: none;
+  animation: fall linear forwards;
+  z-index: 0;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
